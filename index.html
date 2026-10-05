@@ -5,14 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta
 		name="description"
-		content="Eylul Turkay — research portfolio in molecular pathology, cancer biology, medical genetics and genomics."
+		content="Eylul Turkay's research portfolio exploring cancer progression, treatment response, molecular pathology and genomics."
 	/>
-	<title>Eylul Turkay | Research Portfolio</title>
+	<meta name="theme-color" content="#edf2ee" />
+	<title>Eylul Turkay | Cancer Biology &amp; Molecular Pathology</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
 		rel="stylesheet"
 	/>
 
@@ -22,15 +23,18 @@
 <body>
 	<header class="site-header">
 		<div class="container nav-wrapper">
-			<a class="brand" href="#top">Eylul Turkay</a>
+			<a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">ET</span><span>Eylul Turkay</span></a>
 
-			<button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
-				☰
+			<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+				<span></span>
+				<span></span>
+				<span></span>
 			</button>
 
-			<nav class="nav" id="mainNav">
+			<nav class="nav" id="mainNav" aria-label="Main navigation">
 				<a href="#about">About</a>
 				<a href="#research">Research</a>
+				<a href="#experience">Experience</a>
 				<a href="#skills">Skills</a>
 				<a href="#publications">Publications</a>
 				<a href="#contact">Contact</a>
@@ -39,47 +43,51 @@
 	</header>
 
 	<main id="top">
-		<section class="hero">
-			<div class="container hero-grid">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="container hero-layout">
 				<div class="hero-copy">
-					<p class="eyebrow">
-						Molecular Pathology · Cancer Biology · Medical Genetics · Genomics
-					</p>
-
-					<h1>
-						Research focused on cancer biology, molecular mechanisms and genomic
-						interpretation.
-					</h1>
-
+					<p class="eyebrow">RESEARCH PORTFOLIO <span> / </span> MOLECULAR PATHOLOGY</p>
+					<h1 id="hero-title">Cancer progression is dynamic. <em>Treatment response is, too.</em></h1>
 					<p class="hero-text">
-						MSc Molecular Pathology and Cancer Biology & Genomics graduate with a
-						background in Medical Genetics, experimental cancer biology,
-						histopathology, bioinformatics and quantitative analysis.
+						I connect molecular pathology, experimental cancer biology and genomic analysis to investigate how tumours evolve and adapt to therapy.
 					</p>
-
 					<div class="hero-actions">
-						<a class="button primary" href="#research">View research</a>
-						<a
-							class="button secondary"
-							href="https://github.com/eylulturkay2003"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							GitHub
-						</a>
+						<a class="button button-primary" href="#research">Explore selected research</a>
+						<a class="button button-outline" href="assets/Eylul-Turkay-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
 					</div>
+					<p class="hero-note">MSc Molecular Pathology and Cancer Biology &amp; Genomics · Medical Genetics background</p>
 				</div>
 
-				<aside class="focus-card">
-					<p class="focus-label">Research interests</p>
-					<ul>
-						<li>Cancer signalling</li>
-						<li>Therapy resistance</li>
-						<li>Tumour suppressor biology</li>
-						<li>Genomics & bioinformatics</li>
-						<li>Molecular pathology</li>
-					</ul>
-				</aside>
+				<figure class="trajectory-figure" aria-labelledby="trajectory-caption">
+					<div class="figure-heading">
+						<span>THE TUMOUR COURSE</span>
+						<span class="figure-number">01 — 04</span>
+					</div>
+					<div class="trajectory-track" role="img" aria-label="Conceptual progression from tumour initiation through adaptation and treatment response">
+						<div class="trajectory-step">
+							<span class="step-marker">01</span>
+							<span class="step-name">Initiation</span>
+						</div>
+						<div class="trajectory-step">
+							<span class="step-marker">02</span>
+							<span class="step-name">Evolution</span>
+						</div>
+						<div class="trajectory-step trajectory-step-emphasis">
+							<span class="step-marker">03</span>
+							<span class="step-name">Adaptation</span>
+						</div>
+						<div class="trajectory-step">
+							<span class="step-marker">04</span>
+							<span class="step-name">Response</span>
+						</div>
+					</div>
+					<div class="pressure-band">
+						<span>THERAPEUTIC PRESSURE</span>
+						<span class="pressure-line" aria-hidden="true"></span>
+						<span class="pressure-state">A changing system</span>
+					</div>
+					<figcaption id="trajectory-caption">A conceptual lens for studying tumour change and treatment response.</figcaption>
+				</figure>
 			</div>
 		</section>
 
@@ -87,195 +95,172 @@
 			<div class="container two-column">
 				<div>
 					<p class="section-label">About</p>
-					<h2>
-						Scientific training across wet-lab, pathology and computational
-						research.
-					</h2>
+					<h2>Following the biology from molecular mechanism to disease context.</h2>
 				</div>
 
 				<div class="section-copy">
 					<p>
-						My research experience spans cancer cell biology, protein interaction
-						studies, pancreatic cancer metabolism, RNA-seq analysis,
-						histopathology and statistical modelling.
+						My training spans experimental cancer biology, protein interaction studies, pancreatic cancer metabolism, RNA-seq analysis and diagnostic histopathology workflows.
 					</p>
 
 					<p>
-						I am especially interested in mechanisms that shape tumour
-						progression, treatment resistance, immune evasion and disease
-						heterogeneity.
+						I am interested in the mechanisms that shape tumour progression, treatment resistance and disease heterogeneity, and in how experimental evidence can be interpreted with care.
 					</p>
 
 					<p>
-						This portfolio presents selected research projects, technical
-						approaches, quantitative analyses and critical interpretation of
-						experimental limitations.
+						This portfolio brings together selected projects, methods and evidence, including the limitations that inform how results should be read.
 					</p>
 				</div>
 			</div>
 		</section>
 
-		<section id="research" class="section section-alt">
+		<section id="research" class="section project-section">
 			<div class="container">
-				<p class="section-label">Selected research</p>
-				<h2>Projects</h2>
+				<div class="section-heading">
+					<div>
+						<p class="section-label">SELECTED RESEARCH</p>
+						<h2>Questions, methods, evidence.</h2>
+					</div>
+					<p class="section-intro">Four projects across experimental biology, metabolism, genomics and tissue mechanics.</p>
+				</div>
 
 				<div class="project-grid">
-					<article class="project-card">
-						<p class="project-type">MSc Research Project</p>
-						<h3>LIMD1–ARIH1 interaction mapping</h3>
-
-						<p>
-							Mapping regions of LIMD1 involved in association with ARIH1 using
-							truncation constructs, recombinant protein expression, affinity
-							purification and HEK293FT pulldown assays.
-						</p>
-
-						<ul class="project-points">
-							<li>18 LIMD1 constructs investigated</li>
-							<li>FLAG-ARIH1 construct generated and sequence-confirmed</li>
-							<li>Biochemical interaction mapping</li>
-							<li>Critical evaluation of missing controls and variable bait recovery</li>
+					<article class="project-card project-card-featured">
+						<p class="project-type">MSc RESEARCH PROJECT <span>01 / 04</span></p>
+						<h3><a href="projects/limd1-arih1.html">LIMD1–ARIH1 interaction mapping <span aria-hidden="true">↗</span></a></h3>
+						<p class="project-summary">Mapping LIMD1 regions involved in association with ARIH1 through construct-based biochemical assays.</p>
+						<ul class="tag-list" aria-label="Methods">
+							<li>Truncation constructs</li><li>Protein purification</li><li>HEK293FT pulldown</li>
 						</ul>
-
-						<span class="project-status">Detailed project page coming next</span>
+						<div class="evidence-lines">
+							<p><span>01</span><strong>18</strong> LIMD1 constructs investigated</p>
+							<p><span>02</span>FLAG-ARIH1 construct generated and sequence-confirmed</p>
+						</div>
+						<a class="text-link" href="projects/limd1-arih1.html">Read project <span aria-hidden="true">→</span></a>
 					</article>
 
 					<article class="project-card">
-						<p class="project-type">BSc Dissertation</p>
+						<p class="project-type">BSc DISSERTATION <span>02 / 04</span></p>
 						<h3>Pancreatic cancer metabolism</h3>
-
-						<p>
-							Investigation of metabolic vulnerabilities in pancreatic ductal
-							adenocarcinoma, focusing on glycolysis and mitochondrial Complex I
-							targeting.
-						</p>
-
-						<ul class="project-points">
-							<li>CRISPR-based experimental context</li>
-							<li>Systematic screening of more than 600 papers</li>
-							<li>Statistical analysis using SPSS, R and Stata</li>
+						<p class="project-summary">A study of metabolic vulnerabilities in pancreatic ductal adenocarcinoma, focused on glycolysis and mitochondrial Complex I targeting.</p>
+						<ul class="tag-list" aria-label="Methods">
+							<li>CRISPR context</li><li>Literature synthesis</li><li>Quantitative analysis</li>
 						</ul>
-
-						<span class="project-status">Detailed project page coming next</span>
+						<div class="evidence-lines">
+							<p><span>01</span><strong>600+</strong> papers screened systematically</p>
+							<p><span>02</span>Statistical work in SPSS, R and Stata</p>
+						</div>
 					</article>
 
 					<article class="project-card">
-						<p class="project-type">Bioinformatics</p>
+						<p class="project-type">BIOINFORMATICS <span>03 / 04</span></p>
 						<h3>RNA-seq analysis workflow</h3>
-
-						<p>
-							Applied transcriptomic analysis experience using a GRCh38-based
-							RNA-seq workflow, with emphasis on reproducibility, data processing
-							and biological interpretation.
-						</p>
-
-						<span class="project-status">Repository in preparation</span>
+						<p class="project-summary">Transcriptomic analysis experience with emphasis on reproducible processing and biological interpretation.</p>
+						<ul class="tag-list" aria-label="Methods">
+							<li>RNA-seq</li><li>GRCh38</li><li>Reproducible workflow</li>
+						</ul>
+						<div class="evidence-lines">
+							<p><span>01</span>Reference genome: GRCh38</p>
+							<p><span>02</span>Data processing linked to biological interpretation</p>
+						</div>
 					</article>
 
 					<article class="project-card">
-						<p class="project-type">Research Methods</p>
+						<p class="project-type">RESEARCH METHODS <span>04 / 04</span></p>
 						<h3>Basement membrane mechanics</h3>
-
-						<p>
-							AFM-based comparison of basement membrane stiffness between
-							wild-type and Net4 knockout alveolar samples, integrating
-							quantitative statistical analysis.
-						</p>
-
-						<span class="project-status">Poster and analysis to be added</span>
-					</article>
-
-					<article class="project-card">
-						<p class="project-type">Histopathology</p>
-						<h3>Diagnostic laboratory experience</h3>
-
-						<p>
-							Practical experience in histopathology and neuropathology workflows,
-							including tissue processing, FISH and laboratory quality systems.
-						</p>
-
-						<span class="project-status">Experience page coming next</span>
-					</article>
-
-					<article class="project-card">
-						<p class="project-type">Machine Learning</p>
-						<h3>Climate-health modelling</h3>
-
-						<p>
-							Predictive modelling of climate-health relationships using CatBoost
-							and quantitative model evaluation.
-						</p>
-
-						<span class="project-status">Analysis summary to be added</span>
+						<p class="project-summary">A comparison of basement membrane stiffness in wild-type and Net4 knockout alveolar samples.</p>
+						<ul class="tag-list" aria-label="Methods">
+							<li>Atomic force microscopy</li><li>Genotype comparison</li><li>Statistics</li>
+						</ul>
+						<div class="evidence-lines">
+							<p><span>01</span>AFM-based stiffness measurements</p>
+							<p><span>02</span>Wild-type compared with Net4 knockout samples</p>
+						</div>
 					</article>
 				</div>
 			</div>
 		</section>
 
-		<section id="skills" class="section">
+		<section id="experience" class="section experience-section">
 			<div class="container">
-				<p class="section-label">Technical profile</p>
-				<h2>Skills</h2>
+				<div class="section-heading">
+					<div>
+						<p class="section-label">EXPERIENCE</p>
+						<h2>Research across systems and scales.</h2>
+					</div>
+					<p class="section-intro">A practical foundation spanning experimental models, diagnostic workflows and computational analysis.</p>
+				</div>
+				<div class="experience-list">
+					<article class="experience-item">
+						<p class="experience-index">01</p>
+						<div><p class="experience-kicker">EXPERIMENTAL CANCER BIOLOGY</p><h3>Molecular interaction research</h3></div>
+						<p>Designed and evaluated LIMD1 truncation constructs for ARIH1 interaction mapping, combining recombinant protein work, affinity purification and cell-based pulldown assays.</p>
+					</article>
+					<article class="experience-item">
+						<p class="experience-index">02</p>
+						<div><p class="experience-kicker">DIAGNOSTIC LABORATORY</p><h3>Histopathology &amp; neuropathology</h3></div>
+						<p>Exposure to tissue processing, FISH and laboratory quality systems within histopathology and neuropathology workflows.</p>
+					</article>
+					<article class="experience-item">
+						<p class="experience-index">03</p>
+						<div><p class="experience-kicker">COMPUTATIONAL ANALYSIS</p><h3>Transcriptomics &amp; statistics</h3></div>
+						<p>Worked with GRCh38-based RNA-seq analysis and quantitative approaches across experimental and observational research questions.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="section skills-section">
+			<div class="container">
+				<div class="section-heading">
+					<div><p class="section-label">METHODS &amp; TOOLS</p><h2>Technical profile.</h2></div>
+				</div>
 
 				<div class="skills-grid">
 					<div class="skill-block">
-						<h3>Molecular & Cell Biology</h3>
-						<p>
-							Western blotting, pulldown assays, plasmid preparation, mutagenesis,
-							CRISPR-related workflows and clonogenic assays.
-						</p>
+						<h3>Molecular &amp; cell biology</h3>
+						<ul class="tag-list"><li>Western blot</li><li>Pulldown assays</li><li>Plasmid preparation</li><li>Mutagenesis</li><li>CRISPR-related workflows</li><li>Clonogenic assays</li></ul>
 					</div>
 
 					<div class="skill-block">
 						<h3>Pathology</h3>
-						<p>
-							Histopathology workflows, tissue processing, FISH,
-							immunohistochemistry and diagnostic laboratory exposure.
-						</p>
+						<ul class="tag-list"><li>Histopathology</li><li>Tissue processing</li><li>FISH</li><li>Immunohistochemistry</li></ul>
 					</div>
 
 					<div class="skill-block">
 						<h3>Bioinformatics</h3>
-						<p>
-							RNA-seq workflows, GRCh38-based analysis, transcriptomic
-							interpretation and reproducible data processing.
-						</p>
+						<ul class="tag-list"><li>RNA-seq</li><li>GRCh38</li><li>Transcriptomic interpretation</li><li>Reproducible processing</li></ul>
 					</div>
 
 					<div class="skill-block">
-						<h3>Statistics</h3>
-						<p>
-							R, SPSS, Stata and quantitative analysis for experimental and
-							observational datasets.
-						</p>
+						<h3>Quantitative methods</h3>
+						<ul class="tag-list"><li>R</li><li>SPSS</li><li>Stata</li><li>Statistical modelling</li><li>CatBoost</li></ul>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="publications" class="section section-alt">
+		<section id="publications" class="section publications-section">
 			<div class="container">
-				<p class="section-label">Research output</p>
-				<h2>Publications</h2>
-
-				<div class="publication-card">
-					<p class="publication-title">
-						Co-author, <em>Healthcare</em> (2026), 14(8):1050
-					</p>
-					<p>
-						OECD health-system performance analysis using multi-criteria
-						decision-making methods.
-					</p>
+				<div class="section-heading">
+					<div><p class="section-label">RESEARCH OUTPUT</p><h2>Publications.</h2></div>
+					<p class="section-intro">Peer-reviewed work applying quantitative decision methods to health-system performance.</p>
 				</div>
+				<article class="publication-entry">
+					<p class="publication-type">CO-AUTHOR · RESEARCH ARTICLE · 2026</p>
+					<div class="publication-detail">
+						<div><h3>OECD health-system performance analysis</h3><p>Multi-criteria decision-making methods · <em>Healthcare</em>, 14(8), 1050 (2026)</p></div>
+						<a class="text-link" href="https://www.mdpi.com/2227-9032/14/8/1050" target="_blank" rel="noopener noreferrer">View article <span aria-hidden="true">↗</span></a>
+					</div>
+				</article>
 			</div>
 		</section>
 
-		<section id="contact" class="section">
-			<div class="container contact-card">
+		<section id="contact" class="contact-section">
+			<div class="container contact-layout">
 				<div>
 					<p class="section-label">Contact</p>
-					<h2>Research, PhD and collaboration enquiries</h2>
+					<h2>Research, PhD and collaboration enquiries.</h2>
 				</div>
 
 				<div class="contact-links">
@@ -287,10 +272,7 @@
 						GitHub profile
 					</a>
 
-					<span>
-						LinkedIn and email can be added once you decide what you want to make
-						public.
-					</span>
+					<span>For professional updates and code, visit my GitHub profile.</span>
 				</div>
 			</div>
 		</section>
