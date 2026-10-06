@@ -31,3 +31,15 @@ if (menuToggle && mainNav) {
 		}
 	});
 }
+
+document.addEventListener("contextmenu", (event) => {
+	if (event.target instanceof Element && event.target.closest("[data-protected-media]")) {
+		event.preventDefault();
+	}
+});
+
+document.addEventListener("dragstart", (event) => {
+	if (event.target instanceof Element && event.target.closest("[data-protected-media]")) {
+		event.preventDefault();
+	}
+});
