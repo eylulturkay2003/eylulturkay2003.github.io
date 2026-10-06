@@ -125,11 +125,18 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--coral); outline
 .text-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 17px; color: #a8d6bd; font-size: 12px; font-weight: 700; }
 
 .experience-list { margin-top: 44px; border-top: 1px solid var(--line); }
-.experience-item { display: grid; grid-template-columns: 42px minmax(190px, 0.8fr) minmax(0, 1.2fr); gap: 24px; align-items: start; padding: 25px 0; border-bottom: 1px solid var(--line); }
+.experience-item { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 24px; align-items: start; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .experience-index { margin: 0; color: var(--coral); font-size: 11px; font-weight: 700; }
 .experience-kicker { color: var(--muted); font-size: 9px; }
 .experience-item h3 { margin: 5px 0 0; font-size: 17px; }
-.experience-item > p:last-child { max-width: 520px; margin: 0; color: var(--ink-soft); font-size: 13px; }
+.experience-meta { margin: 5px 0 0; color: var(--muted); font-size: 12px; font-weight: 600; }
+.experience-details { display: grid; gap: 6px; max-width: 920px; margin: 12px 0 0; padding-left: 18px; color: var(--ink-soft); font-size: 13px; line-height: 1.55; }
+.experience-details li { padding-left: 3px; }
+.experience-dates { display: grid; gap: 6px; margin-top: 9px; }
+.experience-dates p { margin: 0; color: var(--ink-soft); font-size: 12px; }
+.experience-dates strong { color: var(--ink); }
+.experience-actions { margin-top: 15px; }
+.experience-actions .button { width: fit-content; }
 .education-list { margin-top: 42px; border-top: 1px solid var(--line); }
 .education-entry { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 24px; align-items: start; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .education-entry h3 { margin: 5px 0 0; font-size: 19px; }
@@ -241,7 +248,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--coral); outline
 	.project-card { padding: 23px 20px; }
 	.project-summary { min-height: 0; }
 	.experience-item { grid-template-columns: 28px 1fr; gap: 7px 14px; }
-	.experience-item > p:last-child { grid-column: 2; }
 	.education-entry { grid-template-columns: 28px minmax(0, 1fr); gap: 7px 14px; }
 	.education-results ul { grid-template-columns: 1fr; }
 	.skills-grid { grid-template-columns: 1fr; gap: 25px; margin-top: 30px; }
