@@ -146,6 +146,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--coral); outline
 .publication-detail .text-link { flex-shrink: 0; margin: 0; color: var(--green); }
 .publication-detail .text-link:hover { color: var(--coral); }
 .archive-media .publication-detail { align-items: flex-start; }
+.training-progression { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 24px; margin-top: 30px; padding: 22px 26px; border: 1px solid #bdc9bf; background: rgba(251, 252, 249, 0.7); }
+.training-progression-step h3 { margin: 8px 0 0; font-family: "DM Serif Display", Georgia, serif; font-size: 20px; font-weight: 400; }
+.training-progression-step p:last-child { margin: 7px 0 0; color: var(--muted); font-size: 12px; }
+.training-progression-arrow { color: var(--coral); font-size: 22px; }
+.certificate-list { margin-top: 18px; }
+.certificate-list .publication-entry { margin-top: 0; padding: 22px 0; border-bottom: 0; }
+.certificate-list .publication-entry:last-child { border-bottom: 1px solid #9eafa3; }
+.certificate-list .publication-detail { align-items: flex-start; }
+.certificate-list .publication-detail > div:first-child { max-width: 840px; }
+.certificate-list .publication-detail .hero-actions { margin-top: 0; }
+.certificate-progression-note { padding-left: 12px; border-left: 2px solid #9eafa3; }
 .archive-media img, .archive-media video { display: block; width: min(100%, 480px); max-width: 100%; margin-top: 12px; }
 .archive-media figure { margin: 18px 0 0; }
 .archive-media figcaption { max-width: 480px; margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.5; }
@@ -221,6 +232,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--coral); outline
 	.experience-item > p:last-child { grid-column: 2; }
 	.skills-grid { grid-template-columns: 1fr; gap: 25px; margin-top: 30px; }
 	.publication-detail { align-items: flex-start; flex-direction: column; gap: 12px; }
+	.training-progression { grid-template-columns: 1fr; gap: 14px; padding: 18px; }
+	.training-progression-arrow { justify-self: center; }
 	.contact-layout { align-items: flex-start; flex-direction: column; }
 	.contact-section h2 { font-size: 31px; }
 	.footer-inner { flex-direction: column; gap: 4px; }
