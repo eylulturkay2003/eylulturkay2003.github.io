@@ -181,6 +181,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--coral); outline
 .detail-sidebar dd { margin: 3px 0 0; font-size: 13px; font-weight: 600; }
 .caution-note { margin-top: 14px; padding: 17px 19px; border-left: 3px solid var(--coral); background: #f8eae5; color: var(--ink-soft); font-size: 13px; }
 .detail-back { display: inline-flex; margin-top: 34px; color: var(--green); font-size: 13px; font-weight: 700; }
+.page-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.coursework-entry { scroll-margin-top: 100px; }
+.coursework-entry h2 { margin: 10px 0 16px; }
+.coursework-entry p { margin: 10px 0; }
+.coursework-entry strong { color: var(--ink); }
+.coursework-content .publication-entry + .publication-entry { margin-top: 28px; }
 
 @media (max-width: 900px) {
 	.hero-layout { grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr); gap: 32px; }

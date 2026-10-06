@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Viewing-only summaries of selected coursework in statistics, biological therapies, cancer genomics and clinical trial design." />
-	<title>Coursework | Eylul Turkay</title>
+	<meta name="description" content="Readable, source-based summaries of selected academic coursework by Eylul Turkay." />
+	<title>Academic Coursework | Eylul Turkay</title>
 	<link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -19,31 +19,80 @@
 	</header>
 	<main>
 		<section class="detail-hero"><div class="container">
-			<p class="breadcrumb"><a href="../archive.html">Academic archive</a> / Coursework</p><p class="section-label">SELECTED COURSEWORK</p>
-			<h1>Coursework</h1><p class="detail-lead">Concise topic summaries of selected academic assignments. These summaries do not reproduce submitted documents or imply personal experimental work.</p>
+			<p class="breadcrumb"><a href="../index.html#top">Home</a> / <a href="../index.html#research">Research</a> / Coursework</p>
+			<p class="section-label">ACADEMIC COURSEWORK</p><h1>Coursework portfolio</h1>
+			<p class="detail-lead">Readable summaries of selected group and individual work. Claims about published studies below summarize the cited literature discussed in the assignments; they are not original experiments or clinical findings.</p>
 			<div class="viewing-notice">For viewing only — reproduction or redistribution is not permitted.</div>
 		</div></section>
-		<section class="section"><div class="container detail-content">
-			<article class="publication-entry" id="research-methods"><p class="publication-type">GROUP COURSEWORK · STATISTICS</p><h2>Research Methods — Statistics Group Project</h2>
-				<p>Collaborative coursework applying statistical analysis and interpretation to a research question. The submitted group report is the source for the exact analysis and results; no additional result is asserted in this summary.</p>
+		<section class="section"><div class="container detail-content coursework-content">
+			<article class="publication-entry coursework-entry" id="research-methods">
+				<p class="publication-type">GROUP COURSEWORK · CAM937 RESEARCH METHODS</p>
+				<h2>Evaluating consumer taste ratings for own-brand and well-known-brand orange juice</h2>
+				<p><strong>Aim.</strong> To compare sensory ratings for two orange juices under blinded conditions and explore whether revealing brand identity changed stated preference.</p>
+				<p><strong>Approach.</strong> This was a within-participant blinded tasting. Participants rated overall liking and sensory attributes using a structured questionnaire. The group report describes 120 adult volunteers recruited; 118 paired responses were used for rating comparisons and 117 for preference-change analysis. Normality was assessed with Shapiro–Wilk; the report then used Wilcoxon signed-rank comparisons and Fisher's exact test. Analyses were run in R and checked in SPSS.</p>
+				<p><strong>My contribution.</strong> I co-authored this group project. The available report identifies it as collaborative work; it does not allocate individual tasks, so this page does not attribute a particular analysis or section solely to me.</p>
+				<p><strong>Findings.</strong> The report found higher ratings for the supermarket own-brand sample on overall liking, aroma, acidity, mouthfeel and aftertaste; the sweetness comparison was not statistically significant. These are results reported by the coursework group, not a general claim about brands or orange juice.</p>
+				<p><strong>Interpretation and limitations.</strong> A blinded, paired design helps compare these two specific products, but convenience/volunteer sampling, one setting and a small product set limit generalisability. The coursework also reports a post-reveal preference question; its result should be interpreted within the analyzed responses and reported test.</p>
+				<p><strong>Skills demonstrated.</strong> Group study design, questionnaire-based data collection, paired non-parametric analysis, categorical testing, use of R/SPSS and cautious interpretation.</p>
 			</article>
-			<article class="publication-entry" id="biological-therapies"><p class="publication-type">CANM907 · BIOLOGICAL THERAPIES</p><h2>Therapeutic approaches in glioblastoma</h2>
-				<p>The assignment discusses the immunosuppressive glioblastoma tumour microenvironment and biological therapy, including the role of sialylation in the stated therapeutic rationale. It is written coursework, not a clinical study or experiment performed by the author.</p>
+
+			<article class="publication-entry coursework-entry" id="biological-therapies">
+				<p class="publication-type">CANM907 · BIOLOGICAL THERAPIES · CRITICAL FIGURE ANALYSIS</p>
+				<h2>Myeloid Siglec-E signalling and immune suppression in glioblastoma</h2>
+				<p><strong>Aim.</strong> To evaluate a research study asking whether sialic-acid/Siglec signalling contributes to immunosuppression in the glioblastoma tumour microenvironment, and whether targeting the axis could improve antitumour immunity.</p>
+				<p><strong>Approach.</strong> The assignment critically discusses the study's figures and evidence, including mouse-model genetic perturbations, immune-cell phenotyping, CD8 T-cell depletion, tumour-derived sialic-acid pathway perturbation, checkpoint combinations and human tumour-explant observations. These are methods and findings reported in the source study, not experiments performed by me.</p>
+				<p><strong>My contribution.</strong> I wrote a coursework analysis connecting figure-level observations to biological-therapy concepts and considering alternative explanations and model limitations.</p>
+				<p><strong>Main argument.</strong> In the study as discussed, microglia-specific Siglec-E deletion increased phagocytosis but did not improve survival, while broader myeloid targeting was associated with reduced tumour growth and longer survival in the mouse model. The assignment describes increased phagocytosis and antigen-presentation markers, and reports that CD8 T-cell depletion removed the survival benefit. It highlights compensatory immunosuppressive myeloid responses as one explanation and discusses combination checkpoint blockade as a potential strategy.</p>
+				<p><strong>Interpretation and limitations.</strong> The assignment notes that mouse-model mechanisms do not by themselves establish clinical efficacy, that broader myeloid targeting could have off-target inflammatory effects, and that the explant responses varied. The presented evidence does not establish tumour-antigen specificity or a validated therapy for patients.</p>
+				<p><strong>Skills demonstrated.</strong> Figure interpretation, immunology concepts, comparison of genetic and pharmacological evidence, mechanistic reasoning and critical appraisal of preclinical-to-clinical translation.</p>
 			</article>
-			<article class="publication-entry" id="case-study"><p class="publication-type">CASE STUDY · CANCER GENOMICS</p><h2>Intratumour heterogeneity</h2>
-				<p>A critical discussion of how bulk, single-cell and spatial genomic approaches characterize intratumour heterogeneity, and how sampling affects biomarker discovery and interpretation of therapy resistance.</p>
+
+			<article class="publication-entry coursework-entry" id="case-study">
+				<p class="publication-type">ACADEMIC CASE STUDY · CANCER GENOMICS</p>
+				<h2>Intratumour heterogeneity, biomarker discovery and therapy resistance</h2>
+				<p><strong>Aim.</strong> To assess how genomic and single-cell technologies characterize intratumour heterogeneity (ITH), and how measurement of that heterogeneity affects biomarkers and resistance interpretation.</p>
+				<p><strong>Approach.</strong> The case study synthesizes published examples using bulk sequencing, multi-region tumour sampling, single-cell and spatial approaches. It compares what each resolution can reveal with the limits imposed by tumour sampling and timepoint.</p>
+				<p><strong>My contribution.</strong> I prepared a literature-based written analysis. The source is an academic case study, not a sequencing experiment or original patient cohort.</p>
+				<p><strong>Main argument.</strong> The assignment cites a pan-cancer analysis in which 95.1% of informative samples among 2,658 cancers contained subclonal expansions, and discusses TRACERx regional sampling as linking genomic evolution measures with recurrence. Tumours can contain subclonal and transcriptionally diverse populations; bulk averages can miss low-frequency populations, while spatial and single-cell methods can resolve features hidden by bulk data. Resistant subclones and selection can complicate biomarker discovery and contribute to relapse. These are reported findings from the cited studies, not data generated for this case study.</p>
+				<p><strong>Interpretation and limitations.</strong> A biopsy is a partial, time-specific sample. Greater assay resolution does not remove sampling bias, technical noise, batch effects or the challenge of determining which detected differences are functionally and clinically relevant.</p>
+				<p><strong>Skills demonstrated.</strong> Comparing technology capabilities, synthesizing oncology evidence, evaluating sampling limitations and communicating implications for biomarker validity.</p>
 			</article>
-			<article class="publication-entry" id="clinical-trial-design"><p class="publication-type">MOCK CLINICAL TRIAL DESIGN</p><h2>Targeted combinations in chronic lymphocytic leukaemia</h2>
-				<p>A mock trial-design assignment uses the rationale for combining BTK and BCL2 inhibition and discusses published evidence, including the CAPTIVATE trial. Reported trial outcomes are secondary-source evidence, not results generated by the author.</p>
+
+			<article class="publication-entry coursework-entry" id="clinical-trial-design">
+				<p class="publication-type">MOCK CLINICAL TRIAL DESIGN · ONCOLOGY</p>
+				<h2>Combining BTK and BCL2 inhibition in chronic lymphocytic leukaemia</h2>
+				<p><strong>Aim.</strong> To develop a rationale for a mock combination-trial design in CLL using complementary survival pathways: B-cell receptor/BTK signalling and BCL2-mediated apoptosis avoidance.</p>
+				<p><strong>Approach.</strong> The assignment reviews published targeted-therapy evidence, including fixed-duration ibrutinib plus venetoclax and CAPTIVATE, then proposes a phase 3, multicentre, randomized, open-label comparison of acalabrutinib–venetoclax fixed-duration treatment with MRD-guided treatment duration in treatment-naïve CLL. The written design estimates approximately 500 participants and uses progression-free survival assessed by a central blinded review committee as its primary endpoint. These are proposed design features, not a trial conducted by me.</p>
+				<p><strong>Design logic.</strong> Both arms use the same drug combination; the planned contrast is treatment duration/when to stop, rather than comparing different drug regimens. The assignment describes stratification by IGHV and TP53 status and an MRD-guided stopping rule based on confirmed undetectable MRD, with bone-marrow confirmation.</p>
+				<p><strong>My contribution.</strong> I developed the written rationale, proposed study design, eligibility and procedure framework, and appraisal of published evidence documented in the assignment.</p>
+				<p><strong>Main argument.</strong> BTK inhibition targets B-cell receptor signalling and BCL2 inhibition promotes apoptosis; combining them is presented as a rationale for a time-limited strategy. The assignment considers whether MRD-guided stopping might reduce unnecessary exposure while maintaining disease control. Published CAPTIVATE response and uMRD measurements are secondary-source evidence, not results generated by this coursework.</p>
+				<p><strong>Interpretation and limitations.</strong> An open-label adaptive duration strategy may affect care and assessment, hence the proposed blinded central PFS review. The proposed sample size and design do not themselves establish adequate power or feasibility. Follow-up, toxicity, MRD assay consistency, missing assessments and longer-term relapse would need careful prespecification and monitoring. This remains a mock design, not clinical guidance or a tested protocol.</p>
+				<p><strong>Skills demonstrated.</strong> Translational rationale, randomized trial structure, treatment-arm comparison, eligibility and endpoint planning, MRD-based decision rules, evidence appraisal and recognition of follow-up and population limitations.</p>
 			</article>
-			<article class="publication-entry" id="critical-analysis"><p class="publication-type">CRITICAL ANALYSIS · BREAST CANCER</p><h2>Ductal carcinoma in situ progression</h2>
-				<p>A literature-based critical review of tumour-intrinsic and microenvironmental factors discussed in progression from ductal carcinoma in situ to invasive breast cancer. Figures and findings from cited papers remain attributed to their original sources.</p>
+
+			<article class="publication-entry coursework-entry" id="critical-analysis">
+				<p class="publication-type">CRITICAL ANALYSIS · BREAST CANCER</p>
+				<h2>Clonal and microenvironmental contributions to DCIS progression</h2>
+				<p><strong>Aim.</strong> To critically assess whether progression from ductal carcinoma in situ (DCIS) to invasive ductal carcinoma follows a single linear pathway or reflects interactions between tumour-intrinsic changes and local tissue context.</p>
+				<p><strong>Approach.</strong> The written review compares published genomic, spatial and microenvironmental studies, and discusses clonal architecture, stromal context and clinical outcome data. Its figures and tables synthesize cited studies rather than presenting experiments performed by me.</p>
+				<p><strong>My contribution.</strong> I wrote a structured critical review and evaluated strengths and limitations of the cited evidence; the document also includes a separately labeled AI-generated answer, which is not presented here as my own original scientific conclusion.</p>
+				<p><strong>Main argument.</strong> The literature discussed supports a non-simple model: a cited topographic single-cell study found many copy-number changes and driver alterations already present in DCIS subclones before invasion, while local microenvironmental and structural context also influences progression. These lines of evidence do not establish one deterministic route for every lesion.</p>
+				<p><strong>Interpretation and limitations.</strong> Much evidence is observational or based on selected tissue samples. Timing, spatial sampling, cohort composition and differences between molecular association and causal mechanism limit prediction for an individual patient.</p>
+				<p><strong>Skills demonstrated.</strong> Critical literature synthesis, comparison of study designs, interpretation of genomic and clinical evidence, figure/table synthesis and distinguishing association from causation.</p>
 			</article>
-			<article class="publication-entry" id="research-literature"><p class="publication-type">RESEARCH LITERATURE · BIOLOGICAL THERAPIES</p><h2>Biological Therapies literature assignment</h2>
-				<p>This is listed as coursework in the archive. This overview deliberately makes no method or outcome claim beyond the submitted assignment's biological-therapies subject area.</p>
+
+			<article class="publication-entry coursework-entry" id="research-literature">
+				<p class="publication-type">LITERATURE REVIEW · BIOLOGICAL THERAPIES</p>
+				<h2>CAR T-cell therapy: efficacy, failure modes and engineering strategies</h2>
+				<p><strong>Aim.</strong> To review CAR T-cell therapy in relapsed/refractory B-cell acute lymphoblastic leukaemia, diffuse large B-cell lymphoma and multiple myeloma, and evaluate how engineering approaches might address treatment failure.</p>
+				<p><strong>Approach.</strong> The review describes the autologous CAR T-cell workflow and receptor design, compares CD28 and 4-1BB costimulation, and synthesizes clinical evidence and proposed engineering strategies. It contrasts faster effector expansion associated with CD28 designs with persistence/memory features associated with 4-1BB designs, while considering the efficacy–toxicity trade-off. It is a literature review, not cell engineering or clinical work performed by me.</p>
+				<p><strong>My contribution.</strong> I authored the review and organized the discussion around clinical efficacy, mechanisms of failure and design trade-offs. Figures adapted from published work retain their original-source attribution.</p>
+				<p><strong>Main argument.</strong> CD19- and BCMA-directed therapies can produce substantial responses in some heavily pretreated settings, but toxicity (including CRS/ICANS), antigen escape, T-cell exhaustion, tumour-microenvironment suppression and manufacturing delays remain important barriers. The review argues that single-axis engineering can shift rather than eliminate failure modes; it discusses multi-antigen recognition, persistence-supporting design and reversible pharmacological control as a combined research direction.</p>
+				<p><strong>Interpretation and limitations.</strong> Response estimates vary by product, disease and cohort. Several safety-switch or control strategies discussed remain preclinical or lack long-term outcome evidence; proposed combinations are hypotheses for further testing, not established improvements.</p>
+				<p><strong>Skills demonstrated.</strong> Literature searching and synthesis, immunotherapy mechanism comparison, translational appraisal, balancing efficacy and toxicity, and identifying evidence gaps.</p>
 			</article>
-			<p class="caution-note">These are topic-level summaries. Consult the cited sources named in the original coursework for primary evidence; third-party research remains their authors' work.</p>
-			<a class="detail-back" href="../archive.html">← Back to archive</a>
+			<p class="caution-note">These are readable portfolio summaries, not reproductions of coursework. Clinical and experimental findings remain attributable to their original studies and references.</p>
+			<div class="page-actions"><a class="button button-outline" href="../index.html#research">Back to Research</a><a class="button button-primary" href="../archive.html">Back to Archive</a></div>
 		</div></section>
 	</main>
 	<footer class="footer"><div class="container footer-inner">

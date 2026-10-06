@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="A cautious overview of variant-calling internship work documented in a data retrieval template." />
-	<title>Variant Calling Internship | Eylul Turkay</title>
+	<meta name="description" content="A cautious, readable account of public RNA-sequencing data retrieval and chromosome 17 analysis documented during bioinformatics training." />
+	<title>Bioinformatics Training | Eylul Turkay</title>
 	<link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -14,17 +14,36 @@
 		<nav class="nav" id="mainNav" aria-label="Main navigation"><a href="../index.html#about">About</a><a href="../index.html#research">Research</a><a href="../archive.html">Archive</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></nav>
 	</div></header>
 	<main><section class="detail-hero"><div class="container">
-		<p class="breadcrumb"><a href="../archive.html">Academic archive</a> / Internship work</p><p class="section-label">BIOINFORMATICS INTERNSHIP</p>
-		<h1>Variant-calling workflow</h1><p class="detail-lead">A source-conscious overview of internship work documented in a data-retrieval and variant-calling template.</p>
+		<p class="breadcrumb"><a href="../index.html#top">Home</a> / <a href="../index.html#research">Research</a> / Bioinformatics training</p>
+		<p class="section-label">BIOINFORMATICS TRAINING · RNA-SEQ</p><h1>Public RNA-seq data and chromosome 17 mapping</h1>
+		<p class="detail-lead">A documented training workflow using public breast-cancer cell-line sequencing data to practice read quality control, trimming, reference mapping and coverage interpretation.</p>
 		<div class="viewing-notice">For viewing only — reproduction or redistribution is not permitted.</div>
 	</div></section>
 	<section class="section"><div class="container detail-layout"><div class="detail-content">
-		<section><p class="section-label">OVERVIEW</p><h2>Data retrieval and variant analysis.</h2><p>The submitted internship record concerns bioinformatics data retrieval and variant calling. It is a record of training/workflow documentation, not evidence of an independently validated clinical diagnostic result.</p></section>
-		<section><p class="section-label">METHODS &amp; INTERPRETATION</p><h2>Evaluate the documented analysis cautiously.</h2><p>The source report contains variant-calling workflow material. Its internal inconsistencies and limited chromosome 17 coverage constrain what can be concluded from the recorded output. No broader diagnostic or clinical interpretation is made here.</p></section>
-		<section><p class="section-label">LIMITATIONS</p><h2>Coverage and consistency limit interpretation.</h2><p>Any conclusions would require consistent sample and pipeline documentation, complete coverage assessment, and independent validation. This portfolio summary does not reproduce individual-level data or identifiers.</p></section>
-		<section><p class="section-label">SOURCE &amp; USE</p><h2>Training record</h2><p>Based on the author's internship data-retrieval template. No patient-level finding is presented.</p></section>
-		<a class="detail-back" href="../archive.html">← Back to archive</a>
-	</div><aside class="detail-sidebar" aria-label="Work overview"><h2>AT A GLANCE</h2><dl><dt>Work type</dt><dd>Internship workflow record</dd><dt>Area</dt><dd>Bioinformatics</dd><dt>Focus</dt><dd>Data retrieval and variant calling</dd><dt>Interpretation</dt><dd>Limited by source-record constraints</dd></dl></aside></div></section></main>
+		<section><p class="section-label">OVERVIEW</p><h2>From public sequencing runs to mapped reads.</h2>
+			<p>The internship report documents a bioinformatics exercise using two paired-end RNA-seq datasets obtained from the public NCBI Sequence Read Archive. The selected samples were breast-cancer cell lines. The stated downstream focus was chromosome 17, including practice interpreting BRCA1-region mapping and possible variants.</p>
+		</section>
+		<section><p class="section-label">DATA &amp; APPROACH</p><h2>Quality control, trimming and reference mapping.</h2>
+			<ol><li><strong>Public data retrieval:</strong> locate sequencing runs in the NCBI SRA and retrieve paired-end FASTQ files through Galaxy using Fasterq-dump.</li><li><strong>Read quality:</strong> inspect per-base quality, GC content, duplication and overrepresented sequences in FastQC.</li><li><strong>Trimming:</strong> apply the documented Trimmomatic sliding-window quality filter (four-base window, minimum average Phred 20; discard reads shorter than 36 bases) and perform a second FastQC check.</li><li><strong>Reference:</strong> use the GRCh38.p14 chromosome 17 reference (NC_000017.11) and its annotations.</li><li><strong>Mapping:</strong> import trimmed paired-end reads into Geneious Prime and map them to the chromosome 17 reference; review mapped/unmapped reads and coverage statistics.</li></ol>
+		</section>
+		<section><p class="section-label">MY ROLE</p><h2>Training analysis using public, non-patient-specific project data.</h2>
+			<p>The report documents my work retrieving public sequencing runs, performing read-quality checks and trimming, preparing the reference, mapping reads, and reviewing alignment/coverage output in Geneious. This is computational training and analysis of public cell-line data; it is not clinical diagnostic work.</p>
+		</section>
+		<section><p class="section-label">OBSERVATIONS &amp; INTERPRETATION</p><h2>Coverage determines what variant review can support.</h2>
+			<p>The workflow report describes mapping to chromosome 17 to explore BRCA1 transcript abundance and variant detection. Its coverage was limited, and the source report contains internal inconsistencies. Consequently, mapped reads or candidate variation cannot be presented here as validated variants, reliable gene-expression measurements or biological conclusions.</p>
+			<p>The exercise demonstrates why read depth, uniformity, mapping quality and reference choice must be examined before interpreting a genomic locus. A chromosome-restricted mapping exercise also cannot characterize the whole transcriptome or genome.</p>
+		</section>
+		<section><p class="section-label">LIMITATIONS &amp; NEXT STEPS</p><h2>Not a validated analysis pipeline.</h2>
+			<p>The documented workflow uses a limited reference scope, and its record has inconsistencies and limited chromosome 17 coverage. It should not be represented as a validated end-to-end variant-calling pipeline. Stronger work would require a clearly versioned, reproducible workflow; broader reference coverage; documented read and mapping quality thresholds; sufficient locus-level depth; appropriate controls; and independent validation before interpreting candidate variants.</p>
+		</section>
+		<section><p class="section-label">SKILLS DEMONSTRATED</p><h2>Foundational sequencing-data handling.</h2>
+			<ul><li>Retrieving public SRA data and recording metadata.</li><li>FASTQ quality assessment with FastQC.</li><li>Quality-based trimming with Trimmomatic.</li><li>Working with GRCh38 reference sequences and chromosome annotations.</li><li>Read mapping and coverage review in Geneious Prime.</li><li>Recognizing the limits of coverage and avoiding unsupported variant conclusions.</li></ul>
+		</section>
+		<section><p class="section-label">SOURCE RECORD</p><h2>Internship workflow documentation</h2>
+			<p>This summary is based on the author's data-retrieval and variant-calling training report. It omits sample accession and cell-line identifiers from the public display and does not reproduce the source document.</p>
+		</section>
+		<div class="page-actions"><a class="button button-outline" href="../index.html#research">Back to Research</a><a class="button button-primary" href="../archive.html">Back to Archive</a></div>
+	</div><aside class="detail-sidebar" aria-label="Training overview"><h2>AT A GLANCE</h2><dl><dt>Type</dt><dd>Bioinformatics training</dd><dt>Data</dt><dd>Public paired-end RNA-seq</dd><dt>Reference</dt><dd>GRCh38 chromosome 17</dd><dt>Tools</dt><dd>Galaxy, FastQC, Trimmomatic, Geneious</dd><dt>Claim boundary</dt><dd>Not a validated pipeline</dd></dl></aside></div></section></main>
 	<footer class="footer"><div class="container footer-inner"><p>© 2026 Eylul Turkay. Original portfolio text, research summaries, original figures, photographs and video material are provided for viewing and professional assessment only. Reproduction, redistribution, republication or commercial use without permission is prohibited. Third-party and adapted material remains subject to the rights of its respective owners and is credited where applicable.</p><a href="../copyright.html">Copyright &amp; Use</a><a href="../index.html#top">Portfolio home ↑</a></div></footer>
 	<script src="../script.js"></script>
 </body>
